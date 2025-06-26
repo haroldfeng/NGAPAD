@@ -1,4 +1,8 @@
 # NGAPAD Datasets
+**Normal dataset**: The normal dataset comprises NGAP signaling compliant with 3GPP specifications, where follow protocol procedures and parameter constraints for intercomponent interactions. We simulated the mobility behaviors of 300 UE using UERANSIM to collect NGAP signaling, including UE registration, PDU session management, UE mobility management and UE de-registration. In addition, network configurations of UE and the 5GC were modified to generate comprehensive samples, such as supported security algorithms prioritization and timers settings. Commercial smartphones and programmable SIM cards were integrated into the 5G simulation platform to capture signaling traces.
+
+**Malicious dataset**: The malicious dataset simulate adversarial behaviors on N2 interface to collect anomaly samples. We modified the source code of the srsRAN Project and Open5GS to construct malicious NGAP sessions. We simulated attacks targeting NGAP and NAS vulnerabilities to reflect real-world 5G edge threats. The malicious dataset contains 6 attack types: Identity Spoofing, Denial of Service, Privacy Leakage, Session Hijacking, Resource Abuse and Signaling Manipulation.
+
 ```shell
 ├── datasets_slice # CSV files group by slice length
 │   ├── slice_10
